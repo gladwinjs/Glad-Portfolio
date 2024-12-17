@@ -40,7 +40,11 @@
       "last 1 safari version"
     ]
   },
+  "publishConfig": {
+  "registry": "https://npm.pkg.github.com"
+},
   "devDependencies": {
     "gh-pages": "^6.2.0"
   }
+  
 }
