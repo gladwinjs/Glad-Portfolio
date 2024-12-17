@@ -50,7 +50,7 @@ const HomeContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("/assets/photo-1491466424936-e304919aada7.jpg") no-repeat center center/cover;
+  background: url("https://images.unsplash.com/photo-1491466424936-e304919aada7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRlc2t0b3AlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D") no-repeat center center/cover;
   background-size: cover;
   
   color: white;
