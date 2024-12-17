@@ -1,5 +1,6 @@
 {
   "name": "myapp",
+  "homepage": "https://github.com/gladwinjs/Glad-Portfolio",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
