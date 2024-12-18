@@ -7,19 +7,19 @@ const Projects = () => {
     {
       title: "Instagram Scraper",
       description: "A Python tool for scraping Instagram profile metrics.",
-      img: "/assets/Instagram.svg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg",
       link: "https://github.com/gladwinjs/Web-Scrapping",
     },
     {
       title: "Bill Reminder App",
       description: "Web app to track and manage your bill payments.",
-      img: "/assets/easy-bills.avif",
+      img: "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/6cc15fa4-99c8-11e6-964f-01f8ec4b0f05/3656267460/easy-bills-reminder-screenshot.pngf",
       link: "https://github.com/gladwinjs/Bill-Payment-Reminder",
     },
     {
       title: "Text Sentiment Analysis",
       description: "Focuses on determining the emotional tone of textual data.",
-      img: "/assets/sentiment-analysis.jpg",
+      img: "https://imerit.net/wp-content/uploads/2021/07/what-is-sentiment-analysis.jpg",
       link: "https://github.com/gladwinjs",
     },
   ];

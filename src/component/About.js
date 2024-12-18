@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Tooltip } from "react-tooltip";
-import profileImage from './assets/profile.jpg';
-
+import profileImg from "../assets/Sahaya Profile.jpg";
 
 const About = () => {
   return (
@@ -21,7 +20,9 @@ const About = () => {
         transition={{ duration: 1 }}
       >
         <div className="profile">
-          <img src={profileImage} alt="Profile" />
+        <img src={profileImg} alt="Profile" />
+
+
         </div>
         <div className="text">
           <h2>About Me</h2>
