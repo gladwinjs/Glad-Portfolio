@@ -1,5 +1,6 @@
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import { useState, useEffect } from 'react';
+import { Link as ScrollLink } from 'react-scroll'; // Import react-scroll
 
 export default function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -39,49 +40,54 @@ export default function Header() {
       <nav className="hidden md:block">
         <ul className="flex space-x-8 text-white font-semibold text-lg">
           <li className="relative group">
-            <a
-              href="/"
-              className="hover:text-[#00FF00] transition-colors duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg"
+            <ScrollLink
+              to="home"
+              smooth={true}
+              duration={500}
+              className="hover:text-[#00FF00] transition-colors duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg cursor-pointer"
             >
               Home
-            </a>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#00FF00] group-hover:w-full transition-all duration-300 ease-in-out"></span>
+            </ScrollLink>
           </li>
           <li className="relative group">
-            <a
-              href="/#about"
-              className="hover:text-[#00FF00] transition-colors duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg"
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={500}
+              className="hover:text-[#00FF00] transition-colors duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg cursor-pointer"
             >
               About
-            </a>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#00FF00] group-hover:w-full transition-all duration-300 ease-in-out"></span>
+            </ScrollLink>
           </li>
           <li className="relative group">
-            <a
-              href="/#projects"
-              className="hover:text-[#00FF00] transition-colors duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg"
+            <ScrollLink
+              to="projects"
+              smooth={true}
+              duration={500}
+              className="hover:text-[#00FF00] transition-colors duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg cursor-pointer"
             >
               Projects
-            </a>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#00FF00] group-hover:w-full transition-all duration-300 ease-in-out"></span>
+            </ScrollLink>
           </li>
           <li className="relative group">
-            <a
-              href="/#resume"
-              className="hover:text-[#00FF00] transition-colors duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg"
+            <ScrollLink
+              to="resume"
+              smooth={true}
+              duration={500}
+              className="hover:text-[#00FF00] transition-colors duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg cursor-pointer"
             >
               Resume
-            </a>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#00FF00] group-hover:w-full transition-all duration-300 ease-in-out"></span>
+            </ScrollLink>
           </li>
           <li className="relative group">
-            <a
-              href="/#contact"
-              className="hover:text-[#00FF00] transition-colors duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg"
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="hover:text-[#00FF00] transition-colors duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg cursor-pointer"
             >
               Contact
-            </a>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#00FF00] group-hover:w-full transition-all duration-300 ease-in-out"></span>
+            </ScrollLink>
           </li>
         </ul>
       </nav>
@@ -93,20 +99,55 @@ export default function Header() {
             onClick={() => setToggleMenu(false)}
             className="flex flex-col items-center text-white space-y-6 py-6 text-lg font-medium"
           >
-            <li className="hover:text-[#00FF00] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg">
-              <a href="#">Home</a>
+            <li>
+              <ScrollLink
+                to="home"
+                smooth={true}
+                duration={500}
+                className="hover:text-[#00FF00] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg cursor-pointer"
+              >
+                Home
+              </ScrollLink>
             </li>
-            <li className="hover:text-[#00FF00] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg">
-              <a href="#about">About</a>
+            <li>
+              <ScrollLink
+                to="about"
+                smooth={true}
+                duration={500}
+                className="hover:text-[#00FF00] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg cursor-pointer"
+              >
+                About
+              </ScrollLink>
             </li>
-            <li className="hover:text-[#00FF00] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg">
-              <a href="#projects">Projects</a>
+            <li>
+              <ScrollLink
+                to="projects"
+                smooth={true}
+                duration={500}
+                className="hover:text-[#00FF00] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg cursor-pointer"
+              >
+                Projects
+              </ScrollLink>
             </li>
-            <li className="hover:text-[#00FF00] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg">
-              <a href="#resume">Resume</a>
+            <li>
+              <ScrollLink
+                to="resume"
+                smooth={true}
+                duration={500}
+                className="hover:text-[#00FF00] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg cursor-pointer"
+              >
+                Resume
+              </ScrollLink>
             </li>
-            <li className="hover:text-[#00FF00] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg">
-              <a href="#contact">Contact</a>
+            <li>
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                className="hover:text-[#00FF00] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#00FF00] rounded-lg cursor-pointer"
+              >
+                Contact
+              </ScrollLink>
             </li>
           </ul>
         </nav>
