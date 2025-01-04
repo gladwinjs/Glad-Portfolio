@@ -14,7 +14,8 @@ export default function Hero() {
     }
 
     return (
-        <section className="flex flex-col md:flex-row px-5 py-32 bg-gradient-to-br from-black via-green-900 to-black justify-center relative overflow-hidden">
+        <section className="flex flex-col md:flex-row px-5 py-32 bg-gradient-to-br from-black via-green-900 to-black justify-center relative overflow-hidden"
+        id='home'>
             {/* Decorative green accents */}
             <div className="absolute inset-0 bg-gradient-to-br from-transparent via-green-600/40 to-transparent blur-[250px] pointer-events-none"></div>
             <div className="absolute w-[500px] h-[500px] bg-green-700 rounded-full opacity-30 top-10 left-20 blur-[200px]"></div>

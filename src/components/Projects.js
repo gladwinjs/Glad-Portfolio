@@ -7,8 +7,8 @@ import { FaGithub, FaExternalLinkAlt, FaPython, FaInstagram } from 'react-icons/
 import { SiPhp, SiStreamlit, SiHtml5, SiCss3 } from 'react-icons/si';
 
 export default function Projects() {
-  const projectsRef = useRef(null); 
-  const [animate, setAnimate] = useState(false); 
+  const projectsRef = useRef(null);
+  const [animate, setAnimate] = useState(false);
 
   const config = {
     projects: [
@@ -100,11 +100,9 @@ export default function Projects() {
                 src={project.image}
                 alt={`Project ${index + 1}`}
                 whileHover={{ scale: 1.1 }}
-                loading="lazy" // Lazy load the images
+                loading="lazy"
               />
-              <motion.div
-                className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"
-              >
+              <motion.div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <p className="text-center text-white text-xl p-5">{project.description}</p>
                 <div className="flex justify-center gap-3 text-xl text-teal-400">
                   {project.techStack.map((tech, i) => {
@@ -139,13 +137,14 @@ export default function Projects() {
                   })}
                 </div>
               </motion.div>
-              <div className="absolute bottom-5 w-full flex justify-center gap-5">
+              <div className="absolute bottom-5 left-0 right-0 flex justify-center gap-5">
                 <a
                   className="btn bg-gradient-to-r from-[#ff005c] to-[#00bfff] text-white py-2 px-6 rounded-lg hover:scale-105 transition duration-300 transform hover:bg-gradient-to-l"
                   target="_blank"
                   href={project.link}
                   onClick={handleProjectLinkClick}
                   aria-label={`View the project: ${project.description}`}
+                  rel="noreferrer"
                 >
                   View Project
                 </a>
