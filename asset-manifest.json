@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Glad-Portfolio/static/css/main.38111977.css",
-    "main.js": "/Glad-Portfolio/static/js/main.5d4a3ceb.js",
+    "main.css": "/Glad-Portfolio/static/css/main.117a3070.css",
+    "main.js": "/Glad-Portfolio/static/js/main.360d68ab.js",
     "static/media/Sahaya Profile.jpg": "/Glad-Portfolio/static/media/Sahaya Profile.a4c4f11361902d702c68.jpg",
     "static/media/Netflix.png": "/Glad-Portfolio/static/media/Netflix.a20baa64c79490b81613.png",
     "static/media/Insta.png": "/Glad-Portfolio/static/media/Insta.96d478247a7360ba22e0.png",
@@ -9,11 +9,11 @@
     "static/media/easy-bills.avif": "/Glad-Portfolio/static/media/easy-bills.9af5498edfa1be821e10.avif",
     "static/media/Data.avif": "/Glad-Portfolio/static/media/Data.011699225db0cc23ffcf.avif",
     "index.html": "/Glad-Portfolio/index.html",
-    "main.38111977.css.map": "/Glad-Portfolio/static/css/main.38111977.css.map",
-    "main.5d4a3ceb.js.map": "/Glad-Portfolio/static/js/main.5d4a3ceb.js.map"
+    "main.117a3070.css.map": "/Glad-Portfolio/static/css/main.117a3070.css.map",
+    "main.360d68ab.js.map": "/Glad-Portfolio/static/js/main.360d68ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.38111977.css",
-    "static/js/main.5d4a3ceb.js"
+    "static/css/main.117a3070.css",
+    "static/js/main.360d68ab.js"
   ]
 }
